@@ -1,0 +1,731 @@
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+body main {
+    margin: 16px 112px;
+}
+
+body main h1 {
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 36px;
+}
+
+a {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+p {
+    color: #fff;
+}
+
+/* Navigation Bar */
+.background3 {
+    background-image: url(img/background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#logoutButton {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #ffffff70;
+    margin-left: 0;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+
+#logoutButton:hover {
+    background: #485CFA;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+
+.navbar-logo {
+    padding-left: 92px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar .buttons {
+    display: flex;
+    padding-right: 72px;
+}
+
+.navbar .buttons a{
+    display: flex;
+    align-items: center;
+}
+.navbar .buttons form{
+    margin: 0;
+}
+
+.navbar .buttons .signupbtn {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #485CFA;
+    margin-left: 0;
+}
+
+.navbar .buttons .signupbtn:hover {
+    background: #283596;
+}
+
+.navbar .buttons .loginbtn {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #ffffff70;
+}
+
+.navbar .buttons .loginbtn:hover {
+    background: #485CFA;
+}
+
+/* Header */
+header a {
+    text-decoration: none;
+}
+
+header .container-2columns {
+    display: flex;
+    margin: 0 112px;
+    align-items: center;
+    
+}
+
+header .container-2columns .text {
+    flex: 50%;
+    padding-bottom: 52px;
+}
+
+header .container-2columns .text p {
+    font-size: 16px;
+}
+
+header .container-2columns .text h1 {
+    font-size: 48px;
+    line-height: 100%;
+}
+
+header .container-2columns .text .explorebtn {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #fa5d48;
+    color: #fff;
+    margin-left: 0;
+}
+
+header .container-2columns .text .explorebtn:hover {
+    background: #fff;
+    color: #fa5d48;
+}
+
+header .container-2columns .image {
+    flex: 50%;
+}
+
+header .container-2columns .image img {
+    width: 100%;
+}
+
+/*About Us*/
+.about-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+  
+.about-us-image {
+    flex: 1;
+}
+  
+.about-us-image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+  
+.about-us-content {
+    flex: 2;
+    padding: 20px 20px 20px 40px;
+}
+
+/*Service*/
+.services-section {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+  
+.service-box {
+    background-color: rgba(72, 93, 250, 0.56); /* Background color with transparency */
+    background-image: url('img/frosted-pattern.png'); /* Background image- to create frosted glass effect */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.7);
+}
+  
+.services-title {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+  
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    background-color: #f7f7f777;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+  
+  .icon-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+ /* 
+  h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: #666;
+  }*/
+  
+
+
+/*Carousel Styles*/
+#popularGamesCarousel {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    height: 28rem;
+    align-items: center;
+    background: #485CFA;
+    border-radius: 15px;
+}
+
+#popularGamesCarousel img{
+    width: 100%;
+    height: 448px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#popularGamesCarousel .carousel-caption {
+    bottom: 100px;
+}
+
+#popularGamesCarousel .playnowbtn {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #485CFA;
+    color: #fff;
+    margin-top: 12px;
+}
+
+#popularGamesCarousel .playnowbtn:hover {
+    background: #fff;
+    color: #485CFA;
+}
+
+/*Upcoming*/
+.upcoming-games {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.game-card {
+    width: 280px;
+    border: 2px solid #485CFA;
+    background-color: #f7f7f777;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.7);
+    color: white;
+    padding-bottom: 28px;
+}
+  
+.game-card img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 180px;
+    border-radius: 15px 15px 0 0;
+}
+  
+.game-card h4 {
+    margin: 20px 0 12px 0;
+}
+  
+.game-card p {
+    margin: 12px 0;
+    padding: 0 8px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 24px 0 12px 0;
+    margin-top: 120px;
+}
+
+footer h4 {
+    margin:12px 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer .info{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+footer .info .footer-logo{
+    padding: 0 112px;
+    margin-bottom: 64px;
+}
+
+footer .info .footer-logo a img{
+    width: 64%;
+    height: auto;
+}
+
+footer hr {
+    height:2px;
+    border-width:0;
+    background-color:#9a9a9a;
+    margin: 0 112px;
+}
+
+footer .copyright p{
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+footer .copyright p{
+    margin: 0;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 14px; 
+}
+
+/*signup.php page*/
+.background2 {
+    background-image: url(img/background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.signupform {
+    margin: 80px auto 40px auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    color: #000;
+    box-shadow: 0 8px 50px rgba(255, 255, 255, 0.874);
+}
+
+.signupform h3 {
+    color: #0b0b21;
+    font-weight: 600;
+    text-align: left;
+}
+
+.signupform .left-column {
+    background: #0b0b21;
+    position: relative;
+    border-radius: 15px;
+    height: 590px;
+    text-align: center;
+    align-items: center;
+    z-index: -2;
+}
+
+.signupform .left-column h1 {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    color: white;
+}
+
+.signupform .left-column img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.signupform .right-column {
+    background-color: #fff;
+    padding: 28px 40px 76px 28px;
+    text-align: center;
+    
+    border-radius: 0 15px 15px 0;
+}
+
+.signupform .inputbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.signupform .input-row {
+    display: flex;
+}
+
+.signupform .buttonrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.signupform .buttonrow .form-signupbtn {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #485CFA;
+    margin-left: 0;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    margin: 32px 0 16px 24px;
+}
+
+.signupform .buttonrow .form-signupbtn:hover {
+    background: #283596;
+}
+
+.signupform .buttonrow .form-loginbtn {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #b3b3b3;
+    margin: 0 0 0 24px;
+    color: white;
+}
+
+.signupform .buttonrow .form-loginbtn:hover {
+    background: #485CFA;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin-top: 12px;
+    color: #000000;
+    max-width: 300px;
+    font-weight: 500;
+}
+
+input {
+    border-radius: 10px;
+    border: 1.5px solid rgba(128, 128, 128, 0.541);
+    height: 20px;
+    width: 300px;
+    align-items: center;
+    padding: 12px;
+}
+
+.success-message {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px;
+    text-align: center;
+    font-size: 18px; 
+    font-weight: 500; 
+}
+
+.signup_error_message {
+    background-color: #c92727; 
+    color: white; 
+    padding: 10px;
+    text-align: center;
+    font-size: 18px; 
+    font-weight: 500; 
+}
+
+/*login.php page*/
+
+.loginform {
+    margin: 80px auto 40px auto;
+    max-width: 650px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    color: #000;
+    box-shadow: 0 8px 50px rgba(255, 255, 255, 0.874);
+}
+
+
+.loginform .left-column {
+    background: #0b0b21;
+    position: relative;
+    border-radius: 15px;
+    height: 432px;
+    text-align: center;
+    align-items: center;
+    z-index: -2;
+    width: 232px;
+}
+
+.loginform .left-column h1 {
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    color: white;
+}
+
+.loginform .left-column img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 432px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.loginform .right-column {
+    background-color: #fff;
+    padding: 28px 40px 76px 28px;
+    text-align: center;
+    
+    border-radius: 0 15px 15px 0;
+}
+
+.loginform .inputbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.loginform .input-row {
+    display: flex;
+}
+
+.loginform .buttonrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginform .buttonrow .form-loginbtn {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #485CFA;
+    margin-left: 0;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    margin: 32px 0 16px 24px;
+}
+
+.loginform .buttonrow .form-loginbtn:hover {
+    background: #283596;
+}
+
+.loginform .buttonrow .form-signupbtn {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #b3b3b3;
+    margin: 0 0 0 24px;
+    color: white;
+}
+
+.loginform .buttonrow .form-signupbtn:hover {
+    background: #485CFA;
+}
+
+.login_error_message {
+    background-color: #c92727; 
+    color: white; 
+    padding: 10px;
+    text-align: center;
+    font-size: 18px; 
+    font-weight: 500; 
+}
+
+/*profile.php page*/
+.profileform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px; /* Adjust the max width as needed */
+    text-align: center;
+    margin: 80px auto 0 auto;
+}
+
+.profileform form {
+    margin: 0;
+}
+
+
+.profile-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-image: url(img/background4.jpg);
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.profile-image-container #profile_picture {
+    border: 3px solid white;
+    background: rgba(0, 123, 255, 0.482);
+}
+
+.profile-image-container #uploadLabel {
+    margin: 0;
+    color: white;
+}
+
+.profile-image-big {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007BFF;
+}
+
+#uploadLabel {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#editButton,
+#saveButton {
+    padding: 12px 265px;
+    border-radius: 10px;
+    background: #485CFA;
+    margin-left: 0;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin: 24px 0;
+}
+
+#editButton:hover,
+#saveButton:hover {
+    background: #283596;
+}
+
+.profileform .inputbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 10px 0;
+}
+
+.profileform input[type="text"],
+.profileform input[type="password"],
+.profileform input[type="email"],
+.profileform input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.profileform input[type="file"] {
+    display: none; /* Hide the file input initially */
+}
+
+#username-profile {
+    font-weight: 500;
+    color: white;
+    border:none;
+    background: #00000000;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
